@@ -1,8 +1,8 @@
+import classes from './logo.module.css';
+
 const Logo = () => {
     return(
-        <div>
-
-        </div>
+        <div className={classes.logo}>Bemal Dvanitha</div>
     )
 }
 
