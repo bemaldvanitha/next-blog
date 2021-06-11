@@ -1,10 +1,12 @@
 import  classes from './FeaturedPosts.module.css';
+import PostsGrid from "../posts/PostsGrid";
 
 const FeaturedPosts = ()  => {
     return (
-        <div>
-            <h1>Featured posts</h1>
-        </div>
+        <section className={classes.latest}>
+            <h2>Featured Posts</h2>
+            <PostsGrid/>
+        </section>
     )
 }
 
