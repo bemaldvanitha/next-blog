@@ -9,7 +9,7 @@ const PostsGrid = (props) => {
             {
                 posts.map(post => {
                     return(
-                        <PostItem key={post.id}/>
+                        <PostItem key={post.slug} post={post}/>
                     )
                 })
             }
