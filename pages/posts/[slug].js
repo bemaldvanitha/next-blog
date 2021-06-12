@@ -1,8 +1,13 @@
+import { useRouter } from 'next/router';
+
+import PostContent from "../../components/posts/post-detail/PostContent";
+
 const PostDetailPage = ()  => {
+    const router = useRouter();
+    const slug = router.query.slug;
+
     return (
-        <div>
-            <h1>single post</h1>
-        </div>
+        <PostContent/>
     )
 }
 
