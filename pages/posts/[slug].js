@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import PostContent from "../../components/posts/post-detail/PostContent";
 import { getPostData, getPostsFiles } from '../../lib/posts-util';
 
@@ -5,7 +7,13 @@ const PostDetailPage = (props)  => {
     const { post } = props;
 
     return (
-        <PostContent post={post}/>
+        <>
+            <Head>
+                <title>{post.title}</title>
+                <meta name='description' content={post.excerpt} />
+            </Head>
+            <PostContent post={post}/>
+        </>
     )
 }
 
