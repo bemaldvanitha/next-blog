@@ -134,7 +134,7 @@ function ContactForm() {
                     title={notification.title}
                     message={notification.message}
                 />
-            ) */ }
+            ) */}
         </section>
     );
 }
